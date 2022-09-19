@@ -26,7 +26,13 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
-
+  
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>LiteNetLibTest</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  
   <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
